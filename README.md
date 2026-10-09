@@ -1,156 +1,161 @@
-# 😊 Sentiment Analysis using Machine Learning
+# 😊 Sentiment Analysis Using Machine Learning
+
+A Machine Learning-powered web application that analyzes text and predicts whether the expressed sentiment is **Positive 😊 or Negative 😞**. Built using Python, NLP techniques, TF-IDF vectorization, and Streamlit.
+
+[![Open Live App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sentimentanalysis-hvpv3byhkp3wmqseug2azc.streamlit.app/)
+
+## 🚀 Live Demo
+
+**Try the application here:** [Sentiment Analysis Web App](https://sentimentanalysis-hvpv3byhkp3wmqseug2azc.streamlit.app/)
 
 ## 📌 Project Overview
 
-This project is a **Sentiment Analysis Web Application** built using **Machine Learning** and **Streamlit**. It predicts whether a given text expresses a **Positive** or **Negative** sentiment.
+Sentiment Analysis is an NLP task that identifies the emotional polarity expressed in text. This project uses a trained Machine Learning model to classify text as positive or negative.
 
-The application preprocesses the input text, transforms it into numerical features using TF-IDF Vectorization, and predicts the sentiment using a trained Machine Learning model.
+The application preprocesses the input text, transforms it into numerical features using TF-IDF vectorization, and generates a sentiment prediction using a saved model.
 
----
+## ✨ Features
 
-## 🚀 Features
-
-* Predicts Positive or Negative sentiment
-* Text preprocessing using NLTK
-* TF-IDF Vectorization
-* Machine Learning based classification
-* Interactive Streamlit Web Interface
-* Simple and user-friendly UI
-
----
+* 😊 **Sentiment Prediction:** Classifies text as Positive or Negative.
+* 🧹 **Text Preprocessing:** Processes input text using NLP techniques.
+* 🔤 **TF-IDF Vectorization:** Converts text into numerical features.
+* 🤖 **Machine Learning Classification:** Uses a trained model for prediction.
+* ⚡ **Fast Inference:** Loads saved model artifacts for predictions.
+* 🖥️ **Interactive Interface:** Simple and user-friendly Streamlit application.
+* ☁️ **Cloud Deployment:** Accessible online through Streamlit Community Cloud.
 
 ## 🛠️ Technologies Used
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* NLTK
-* Streamlit
-* Joblib
-
----
+* **Programming Language:** Python
+* **Data Processing:** Pandas, NumPy
+* **Machine Learning:** Scikit-learn
+* **Natural Language Processing:** NLTK
+* **Feature Extraction:** TF-IDF Vectorizer
+* **Model Serialization:** Joblib
+* **Web Framework:** Streamlit
 
 ## 📂 Project Structure
 
 ```text
-Sentiment_analysis/
+Sentiment_Analysis/
 │
-├── app.py
-├── model_training.ipynb
-├── requirements.txt
-├── README.md
-│── sentiment_model.pkl
-└── tfidf_vectorizer.pkl
-└── assets/
+├── app.py                  # Streamlit web application
+├── model_training.ipynb    # Model training notebook
+├── sentiment_model.pkl     # Saved trained model
+├── tfidf_vectorizer.pkl    # Saved TF-IDF vectorizer
+├── requirements.txt        # Project dependencies
+├── assets/                 # Supporting project assets
+└── README.md               # Project documentation
 ```
 
----
+## ⚙️ Machine Learning Workflow
 
-## ⚙️ Installation
+1. **Data Loading:** Load the sentiment dataset.
+2. **Data Cleaning:** Prepare the dataset for analysis.
+3. **Text Preprocessing:** Clean and normalize text using the implemented NLP pipeline.
+4. **Feature Extraction:** Transform text into numerical features using TF-IDF.
+5. **Model Training:** Train a supervised Machine Learning classifier.
+6. **Model Saving:** Save the trained model and vectorizer.
+7. **Web Application:** Build an interactive interface using Streamlit.
+8. **Prediction:** Classify user-provided text as Positive or Negative.
 
-Clone the repository
+## 💻 Installation and Setup
+
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Sentiment_analysis.git
+git clone https://github.com/SachinChoudhary15/Sentiment_Analysis.git
 ```
 
-Move to the project folder
+### 2. Navigate to the Project Directory
 
 ```bash
-cd Sentiment_analysis
+cd Sentiment_Analysis
 ```
 
-Create a virtual environment
+### 3. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate the virtual environment
+### 4. Activate the Environment
 
-### Windows
+**Windows PowerShell:**
 
-```bash
-venv\Scripts\activate
+```powershell
+.\venv\Scripts\Activate.ps1
 ```
 
-### Install dependencies
+### 5. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## ▶️ Run the Application
+## ▶️ Run the Application Locally
 
 ```bash
 streamlit run app.py
 ```
 
----
+Once the application starts, open the local URL displayed in your terminal.
 
-## 📊 Workflow
+## 💡 Example Prediction
 
-1. Load Dataset
-2. Data Cleaning
-3. Text Preprocessing
-4. TF-IDF Feature Extraction
-5. Train Machine Learning Model
-6. Save Model
-7. Build Streamlit Web App
-8. Predict Sentiment
-
----
-
-## 📈 Model Performance
-
-* Accuracy: **(Add your model accuracy here)**
-* Algorithm: **(Example: Logistic Regression / Naive Bayes / Random Forest)**
-
----
-
-## 💡 Example
-
-**Input
+**Input:**
 
 ```text
 I really enjoyed this movie. It was amazing!
 ```
 
-**Prediction
+**Expected sentiment:**
 
 ```text
 Positive 😊
 ```
 
----
+The prediction depends on the trained model and its preprocessing pipeline.
 
-## 📌 Future Improvements
+## 📊 Model Evaluation
 
-* Multi-class Sentiment Analysis
-* Deep Learning (LSTM/BERT)
-* Deploy on Streamlit Cloud or Render
-* Add Confidence Score
-* Support Multiple Languages
+Model performance can be evaluated using:
 
----
+* Accuracy
+* Precision
+* Recall
+* F1-score
+* Confusion Matrix
+
+**Note:** Add the actual test-set accuracy and the classifier name after verifying them from your model training notebook. Avoid reporting unverified performance values.
+
+## ☁️ Deployment
+
+The application is deployed using **Streamlit Community Cloud**.
+
+🔗 **Live Application:** [Open the Sentiment Analysis Web App](https://sentimentanalysis-hvpv3byhkp3wmqseug2azc.streamlit.app/)
+
+## 🔮 Future Improvements
+
+* Extend to multi-class sentiment classification.
+* Explore advanced NLP models such as LSTM and BERT.
+* Add prediction confidence where supported by the model.
+* Support multiple languages.
+* Improve text preprocessing and model evaluation.
+* Add visualizations for sentiment distribution and model performance.
 
 ## 🤝 Contributing
 
-Contributions are welcome. Feel free to fork this repository and submit pull requests.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
+Contributions and suggestions are welcome. Feel free to fork the repository and submit a pull request.
 
 ## 👨‍💻 Author
 
-**Sachin Choudhary
+Sachin Choudhary
 
-GitHub: [https://github.com/your-username](https://github.com/your-username)
+* GitHub: [SachinChoudhary15](https://github.com/SachinChoudhary15)
+
+---
+
+⭐ If you find this project useful, consider giving the repository a star!
+
+*This project is intended for educational and demonstration purposes. Predictions may not always reflect the true sentiment of a text.*
